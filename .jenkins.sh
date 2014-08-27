@@ -1,4 +1,12 @@
-opam pin macaque .
+opam pin add --no-action macaque .
 opam install --deps-only macaque
 opam install --verbose macaque
-opam remove --verbose macaque
+
+do_build_doc () {
+  # Nothing yet...
+  echo -n
+}
+
+do_remove () {
+  opam remove --verbose macaque
+}
